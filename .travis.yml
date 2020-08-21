@@ -6,6 +6,9 @@ services: docker
 addons:
   hosts:
     - mariadb.example.com
+  apt:
+    packages:
+      - jq
 
 before_install:
   - chmod +x .travis/script.sh
