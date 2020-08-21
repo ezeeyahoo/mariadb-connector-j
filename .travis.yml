@@ -34,6 +34,9 @@ matrix:
   include:
     - env: DB=build PACKET=8M
       jdk: openjdk11
+      arch:
+          - amd64
+          - ppc64le
     - env: SKYSQL=true PACKET=8M
       jdk: openjdk11
     - env: DB=mysql:5.6 PACKET=8M
